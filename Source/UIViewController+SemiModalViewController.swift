@@ -162,6 +162,7 @@ extension UIViewController {
             let animationGroup = PushBackAnimationGroup(forward: true,
                                                         viewHeight: targetView.height,
                                                         options: self.options())
+            snapshotView.layer.masksToBounds = true
             snapshotView.layer.add(animationGroup, forKey: "pushedBackAnimation")
         }
         
