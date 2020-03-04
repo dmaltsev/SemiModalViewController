@@ -18,12 +18,12 @@ public class PushBackAnimationGroup: CAAnimationGroup {
         animation.isRemovedOnCompletion = false
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         
-        let animation2 = CABasicAnimation(keyPath: "transform")
-        animation2.toValue = NSValue(caTransform3D: forward ? id2 : CATransform3DIdentity)
-        animation2.beginTime = animation.duration
-        animation2.duration = animation.duration
-        animation2.fillMode = CAMediaTimingFillMode.forwards
-        animation2.isRemovedOnCompletion = false
+//        let animation2 = CABasicAnimation(keyPath: "transform")
+//        animation2.toValue = NSValue(caTransform3D: forward ? id2 : CATransform3DIdentity)
+//        animation2.beginTime = animation.duration
+//        animation2.duration = animation.duration
+//        animation2.fillMode = CAMediaTimingFillMode.forwards
+//        animation2.isRemovedOnCompletion = false
         
         fillMode = CAMediaTimingFillMode.forwards
         isRemovedOnCompletion = false
