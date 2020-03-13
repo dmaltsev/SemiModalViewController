@@ -62,10 +62,10 @@ extension UIViewController {
             return
         }
         
-        NotificationCenter.default.addObserver(targetViewController,
-                                               selector: #selector(interfaceOrientationDidChange(_:)),
-                                               name: UIDevice.orientationDidChangeNotification,
-                                               object: nil)
+//        NotificationCenter.default.addObserver(targetViewController,
+//                                               selector: #selector(interfaceOrientationDidChange(_:)),
+//                                               name: UIDevice.orientationDidChangeNotification,
+//                                               object: nil)
         
         let semiViewHeight = view.frame.size.height
         let semiViewFrame = CGRect(x: 0, y: targetView.height - semiViewHeight, width: targetView.width, height: semiViewHeight)
